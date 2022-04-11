@@ -4,12 +4,14 @@ import StoryPic from "./StoryPic";
 
 export default class StoryMain extends Component {
   render() {
-    const { story } = this.props;
-
+    const { storyContent } = this.props;
+    console.log("sc = ", storyContent);
     return (
       <div className="d-flex">
-        <StoryContent MainStory={true} story={story} />
-        <StoryPic MainStory={true} />
+        <div className="w-50">
+          <StoryContent storyContent={storyContent} forStory={false} />
+        </div>
+        <StoryPic />
       </div>
     );
   }

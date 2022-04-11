@@ -1,17 +1,24 @@
 import React, { Component } from "react";
+import pic from "..\\pic\\planet-earth.png";
 
 export default class StoryPic extends Component {
   render() {
-    const { MainStory, SideStory } = this.props;
-    let style = "";
-
     return (
-      <div
-        className={
-          MainStory ? style + " w-50" : SideStory ? style + " w-25" : style
-        }
-      >
-        窩是圖片
+      <div className="d-flex w-50">
+        <img
+          style={{
+            alignContent: "center",
+            alignItems: "center",
+            justifyContent: "center",
+            justifyItems: "center",
+            display: "block",
+            margin: "auto",
+          }}
+          src={pic}
+          with="100"
+          heigh="200"
+          alt="一張圖片"
+        ></img>
       </div>
     );
   }
