@@ -19,9 +19,12 @@ export default class BE_StoryEdit extends Component {
     body.name = name;
     body.background = background;
     body.storyMain = storyMain;
-    body.storySub1 = storySub1;
-    body.storySub2 = storySub2;
-    body.storySub3 = storySub3;
+    let storySub = [];
+    storySub.push(storySub1);
+    storySub.push(storySub2);
+    storySub.push(storySub3);
+
+    body.storySub = storySub;
     body.task = task;
     body.taskStory = taskStory;
     body.badge = badge;
@@ -62,37 +65,37 @@ export default class BE_StoryEdit extends Component {
             <label htmlFor="storyMain" className="form-label">
               storyMain
             </label>
-            <input className="form-control" id="storyMain"></input>
+            <textarea className="form-control" id="storyMain"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="storySub1" className="form-label">
               storySub1
             </label>
-            <input className="form-control" id="storySub1"></input>
+            <textarea className="form-control" id="storySub1"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="storySub2" className="form-label">
               storySub2
             </label>
-            <input className="form-control" id="storySub2"></input>
+            <textarea className="form-control" id="storySub2"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="storySub3" className="form-label">
               storySub3
             </label>
-            <input className="form-control" id="storySub3"></input>
+            <textarea className="form-control" id="storySub3"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="task" className="form-label">
               task
             </label>
-            <input className="form-control" id="task"></input>
+            <textarea className="form-control" id="task"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="taskStory" className="form-label">
               taskStory
             </label>
-            <input className="form-control" id="taskStory"></input>
+            <textarea className="form-control" id="taskStory"></textarea>
           </div>
           <div className="mb-3">
             <label htmlFor="badge" className="form-label">
